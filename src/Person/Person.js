@@ -1,9 +1,9 @@
 import React from 'react';
-import './Person.css'
+import myCSS from './Person.css'
 const Person = (props) => {
 
     return (
-        <div className="Person">
+        <div className={myCSS.Person}>
         <p onClick={props.click}>I am {props.name} and I am {props.age} years old</p>
         <p>{props.children}</p>
         {/* two way binding */}
